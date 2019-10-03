@@ -8,7 +8,9 @@ jobs:
     <<:***REMOVED***defaults
     steps:
       - checkout
-
+      - run:
+          name: Add Server to Known Hosts
+          command: ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Server
           command: scp -r***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     

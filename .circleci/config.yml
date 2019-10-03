@@ -10,4 +10,4 @@ jobs:
            - "7b:41:0e:0d:60:1d:e8:d9:a0:38:fa:6f:24:c0:79:73"
       - run:
         name: Deploy over SSH
-        command: ssh $SSH_USER@$SSH_HOST 'cd /opt/bitnami/apache2/htdocs && git pull origin master'     
+        command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     

@@ -3,15 +3,11 @@ defaults: &defaults
     - image: circleci/node:4.8.2
 
 version: 2.1
-jobs:
-  build:
+jobs:     
+  deploy_site:
     <<:***REMOVED***defaults
     steps:
-      - checkout # check out the code in the project directory
-          
-  deploy-job:
-    <<:***REMOVED***defaults
-    steps:
+      - checkout
       - add_ssh_keys:
           fingerprints:
             - "bd:b6:18:31:16:ba:a9:4b:16:1b:e4:4e:b9:60:06:b0"

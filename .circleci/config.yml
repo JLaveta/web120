@@ -10,7 +10,10 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "cf:b7:c5:9c:ed:12:7a:30:99:10:66:82:e9:22:68:d2"
+            - "bd:b6:18:31:16:ba:a9:4b:16:1b:e4:4e:b9:60:06:b0"
+      - run:
+          name: Keyscan Lightsail
+          command: ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Server
           command: sudo scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/

@@ -34,19 +34,28 @@
  <h2 class="pageID">Welcome</h2>
 
 <!-- MAKE SURE YOU GET YOUR (3) IMAGES SAVED INTO YOUR IMAGES FOLDER -->
- <img src="images/desktop.jpg" class="desktop" alt="" />
- <img src="images/phone.jpg" class="phone" alt="" />
- <p>Lorem Ipsum place holder text goes here for now</p>
- <p>Lorem Ipsum place holder text goes here for now</p>
- <p>Lorem Ipsum place holder text goes here for now</p>
- <p>Lorem Ipsum place holder text goes here for now</p>
+ <img src="images/beach.jpg" class="desktop" alt="" />
+ <img src="images/mini_golf.jpg" class="phone" alt="" />
+ <p>Application developer with a history in medical service engineering 
+ and aeronautical electronics repair. Adept at project management 
+ and developing web and mobile applications in a number of different 
+ environments. Offering an aptitude for troubleshooting under pressure, 
+ the ability to rapidly learn new skills, and the flexibility to adapt 
+ to new situations. </p>
+ <p>I tend toward a guess and check approach both when
+ learning new skills and troubleshooting, relying a lot on my own intuition.
+ Projects in which I can work on several different technologies are most
+ interesting to me.</p>
+ <p>Most of my free time is spent playing board games with friends. At least
+ once per year I attend a board game convention. The heavier the board game,
+ the better!</p>
 </section>
 <!-- END LEFT COL -->
 
 <!-- START RIGHT COL -->
 <aside>
  <h3>Right Column</h3>
- <img src="images/tablet.jpg" class="tablet" alt="" />
+ <img src="images/main.jpg" class="tablet" alt="" />
  <p>Lorem Ipsum place holder text goes here for now</p>
  <p>Lorem Ipsum place holder text goes here for now</p>
 </aside>

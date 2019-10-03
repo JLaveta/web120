@@ -15,3 +15,10 @@ jobs:
           name: Deploy to Server
           command: sudo scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
           #command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     
+          
+workflows:
+  version: 2.1
+  workflow:
+    jobs:
+      - deploy_site
+   

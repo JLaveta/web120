@@ -15,8 +15,11 @@ jobs:
           name: Keyscan Lightsail
           command: ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
       - run:
+          name: Debug SSH
+          command: ssh $SSH_USER@$SSH_HOST -v
+      - run:
           name: Deploy to Server
-          command: sudo scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
+          command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
           #command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     
           
 workflows:

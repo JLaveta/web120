@@ -1,0 +1,126 @@
+***REMOVED*** My WEB120 Portal Website Styles***REMOVED*****REMOVED***
+
+html***REMOVED*****REMOVED***
+    background-color:#ccc;
+***REMOVED***
+
+main.wrapper***REMOVED*****REMOVED***
+    background-color:#fff;
+    overflow:auto;
+***REMOVED***
+
+h1>a***REMOVED*****REMOVED***
+    text-decoration: none;
+    color:#000;
+***REMOVED***
+
+.logo***REMOVED*****REMOVED***
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+***REMOVED***
+
+***REMOVED*** Embed Responsively Rules!***REMOVED*****REMOVED***
+div.embed-container***REMOVED*****REMOVED***
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+***REMOVED*** 
+
+div.embed-container iframe***REMOVED*****REMOVED***
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+***REMOVED***
+
+footer***REMOVED*****REMOVED***
+	clear:both;
+***REMOVED***
+
+***REMOVED*** START RESPONSIVE STYLES***REMOVED*****REMOVED***
+
+***REMOVED*** DESKTOP***REMOVED*****REMOVED***
+@media all and (min-width:1400px)***REMOVED*****REMOVED***
+	
+   main.wrapper***REMOVED*****REMOVED***
+		width:80%;
+		margin:auto;
+	***REMOVED***
+
+    section***REMOVED*****REMOVED***
+		width:65%;
+		float:left;
+	***REMOVED***
+	
+     aside***REMOVED*****REMOVED***	
+		width:34%;
+		float:right;
+	***REMOVED***
+			
+    img.desktop***REMOVED*****REMOVED***
+      		float:left;
+       		width:50%;
+            display:inline-block;
+***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED***
+    
+    img.tablet, img.phone***REMOVED*****REMOVED***
+       	display:none;
+    	***REMOVED***  
+    
+***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED*** Change background color of navigation on selected page***REMOVED*****REMOVED***
+    ul.topnav li a.selected***REMOVED*****REMOVED***
+        		background-color: #ccc;
+        		color:#000;
+   	***REMOVED*****REMOVED***
+***REMOVED***
+
+
+***REMOVED*** TABLET***REMOVED*****REMOVED***
+@media all and (min-width:737px) and (max-width:1399px)***REMOVED*****REMOVED***
+	
+	section***REMOVED*****REMOVED***
+		width:60%;
+		float:left;
+	***REMOVED***
+	
+	aside***REMOVED*****REMOVED***	
+		width:39%;
+		float:right;
+	***REMOVED***
+	
+    img.tablet***REMOVED*****REMOVED***
+       		width:100%;
+            display:inline-block;
+***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED***
+    
+    img.desktop, img.phone***REMOVED*****REMOVED***
+       	display:none;
+    	***REMOVED***  
+    
+    
+***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED*** Change background color of navigation on selected page***REMOVED*****REMOVED***
+    ul.topnav li a.selected***REMOVED*****REMOVED***
+        background-color: #ccc;
+        color:#000;
+***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED***
+***REMOVED***
+
+***REMOVED*** PHONE***REMOVED*****REMOVED***
+@media all and (max-width:736px)***REMOVED*****REMOVED***
+    
+    img.phone***REMOVED*****REMOVED***
+       		width:100%;
+            display:inline-block;
+***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED***
+    
+    img.tablet, img.desktop***REMOVED*****REMOVED***
+       	display:none;
+    	***REMOVED***  
+
+***REMOVED***

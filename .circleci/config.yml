@@ -12,11 +12,11 @@ jobs:
           fingerprints:
             - "bd:b6:18:31:16:ba:a9:4b:16:1b:e4:4e:b9:60:06:b0"
       - run:
-          name: Directory
-          command: ls
+          name: Keyscan Lightsail
+          command: ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Server
-          command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
+          command: scp -r***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
           #command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     
           
 workflows:

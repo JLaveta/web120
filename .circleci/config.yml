@@ -6,7 +6,9 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - add_ssh_keys
+          fingerprints:
+            - "bd:b6:18:31:16:ba:a9:4b:16:1b:e4:4e:b9:60:06:b0"
       - run:
           name: Deploy to Server
-          command: sudo scp -i /home/bitnami/.ssh/CircleCI.pub -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
+          command: sudo scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
           #command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     

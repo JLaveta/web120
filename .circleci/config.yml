@@ -5,6 +5,8 @@ jobs:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
+      - add_ssh_keys
       - run:
-          name: Deploy over SSH
-          command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     
+          name: Deploy to Server
+          command: sudo scp -i ~/.ssh/web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/
+          #command: scp -r web120***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     

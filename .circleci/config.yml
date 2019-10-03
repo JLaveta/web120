@@ -5,9 +5,14 @@ jobs:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
-      - run:
-          name: Deploy Over SSH
-          command: |
-            ssh $SSH_USER@$SSH_HOST "git remote add deploy /opt/bitnami/apache2/htdocs"
-            
+
+  # These commands are triggered only after a successful (green) build.
+  deployment:
+   dev:
+     branch: master
+       steps:
+         - add_ssh_keys:
+           fingerprints:
+             - "7b:41:0e:0d:60:1d:e8:d9:a0:38:fa:6f:24:c0:79:73"
+     commands:
+       - ssh $SSH_USER@$SSH_HOST 'cd /opt/bitnami/apache2/htdocs && git pull origin master'            

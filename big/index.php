@@ -1,5 +1,5 @@
 ***REMOVED***
-<html>
+***REMOVED***
 <head>
 <title>Big Page</title>
 </head>

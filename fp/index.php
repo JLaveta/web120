@@ -1,5 +1,5 @@
 ***REMOVED***
-<html>
+***REMOVED***
 <head>
 <title>Final Project Index</title>
 </head>

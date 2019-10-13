@@ -1,5 +1,5 @@
 ***REMOVED***
-<html>
+***REMOVED***
 <head>
 <title>AIA Page</title>
 </head>

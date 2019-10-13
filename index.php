@@ -14,7 +14,7 @@
 <body>
 <!-- START WRAPPER -->
 <main class="wrapper">
-***REMOVED*** include './includes/header';***REMOVED***
+***REMOVED*** include './includes/header.php';***REMOVED***
         
 <!-- START LEFT COL -->
 <section>

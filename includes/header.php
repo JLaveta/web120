@@ -8,7 +8,7 @@ echo      "<li><a href=\"big/index.php\">Big</a></li>";
 echo      "<li><a href=\"aia.php\">AIA</a></li>";
 echo      "<li><a href=\"flowchart.php\">Flowchart/Layout</a></li>";
 echo      "<li><a href=\"fp/index.php\">Final Project</a></li>";
-echo      "<li><a href=\"contactme.php\">Contact Sara</a></li>";
+echo      "<li><a href=\"contactme.php\">Contact John</a></li>";
 echo      "<li class=\"icon\"> <a href=\"javascript:void(0);\" onclick=\"myFunction()\">&#9776;</a> </li>";
 echo    "</ul>";
 echo  "</nav>";

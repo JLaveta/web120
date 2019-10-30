@@ -5,7 +5,7 @@ defaults: &defaults
 version: 2.1
 jobs:     
   deploy_site:
-    <<:***REMOVED***defaults
+    <<: *defaults
     steps:
       - checkout
       - run:
@@ -13,7 +13,7 @@ jobs:
           command: ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Server
-          command: scp -r***REMOVED*** $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     
+          command: scp -r * $SSH_USER@$SSH_HOST:/opt/bitnami/apache2/htdocs/     
           
 workflows:
   version: 2.1

@@ -1,5 +1,5 @@
-***REMOVED***
-***REMOVED***
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>John Laveta</title>
 <meta name="viewport" content="width=device-width" />
@@ -14,7 +14,7 @@
 <body>
 <!-- START WRAPPER -->
 <main class="wrapper">
-***REMOVED*** include './includes/header.php';***REMOVED***
+<?php include './includes/header.php';?>
         
 <!-- START LEFT COL -->
 <section>
@@ -49,22 +49,22 @@
 <!-- END RIGHT COL -->
  
 <!-- START Footer -->
-***REMOVED*** include './includes/footer.php';***REMOVED***
+<?php include './includes/footer.php';?>
 <!-- END Footer --> 
 </main>
 <!-- END WRAPPER -->
 
-***REMOVED***
-***REMOVED***
-***REMOVED*** Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon***REMOVED*****REMOVED***
-function myFunction()***REMOVED*****REMOVED***
+    <!-- JavaScript associated with the W3Schools.com Top Navigation Response Exercise --> 
+    <script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav")***REMOVED*****REMOVED***
+    if (x.className === "topnav") {
         x.className += " responsive";
-***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED*** else***REMOVED*****REMOVED***
+    } else {
         x.className = "topnav";
-***REMOVED*****REMOVED*****REMOVED*****REMOVED*****REMOVED***
-***REMOVED***
-***REMOVED*****REMOVED***
+    }
+}
+     </script>
 </body>
-***REMOVED***
+</html>

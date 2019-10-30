@@ -1,25 +1,25 @@
-***REMOVED***
-***REMOVED***
-***REMOVED*** multiple.php is a postback application designed to provide a 
-***REMOVED*** contact form for users to email our clients.  
-***REMOVED*** 
-***REMOVED*** multiple.php provides a larger form with more elements to provide 
-***REMOVED*** a richer example form.
-***REMOVED***
-***REMOVED*** @package nmCAPTCHA2
-***REMOVED*** @author Bill & Sara Newman <williamnewman@gmail.com>
-***REMOVED*** @version 2 2019/10/13
-***REMOVED*** @link http://www.newmanix.com/
-***REMOVED*** @license http://www.apache.org/licenses/LICENSE-2.0
-***REMOVED*** @see contact_include.php 
-***REMOVED*** @todo none
-***REMOVED*****REMOVED***
+<?php
+/**
+ * multiple.php is a postback application designed to provide a 
+ * contact form for users to email our clients.  
+ * 
+ * multiple.php provides a larger form with more elements to provide 
+ * a richer example form.
+ *
+ * @package nmCAPTCHA2
+ * @author Bill & Sara Newman <williamnewman@gmail.com>
+ * @version 2 2019/10/13
+ * @link http://www.newmanix.com/
+ * @license http://www.apache.org/licenses/LICENSE-2.0
+ * @see contact_include.php 
+ * @todo none
+ */
 
 #--------------END CONFIG AREA ------------------------#
-***REMOVED***
+?>
 
 <!-- START HTML FORM -->
-<form action="***REMOVED*** echo basename($_SERVER['PHP_SELF']); ***REMOVED***" method="post">
+<form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="post">
 <div>
     <label>
         Name:<br /><input type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
@@ -70,7 +70,7 @@
         Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Your comments are important to us!" tabindex="60"></textarea>
     </label>
 </div>	
-<div class="g-recaptcha" data-sitekey="<?=$siteKey;***REMOVED***"></div>
+<div class="g-recaptcha" data-sitekey="<?=$siteKey;?>"></div>
 <div>
     <input type="submit" value="submit" />
 </div>

@@ -1,4 +1,4 @@
-***REMOVED***
+<?php
 echo "<header>";
 echo  "<h1><a href=\"index.php\"><i class=\"logo fa fa-home\"></i> John Laveta's SCC WEB120 Portal</a></h1>";
 echo  "<nav>";
@@ -13,4 +13,4 @@ echo      "<li class=\"icon\"> <a href=\"javascript:void(0);\" onclick=\"myFunct
 echo    "</ul>";
 echo  "</nav>";
 echo "</header>";
-***REMOVED***
+?>
